@@ -1,0 +1,93 @@
+h1 {
+    /* this section am making border,changing font color and style of h1*/
+    font-style: italic;
+    margin-left: 400px;
+    /* background-color: rgb(136, 229, 252);*/
+    color: white;
+    /* width: 250px;*/
+    /*border: 2px solid black;*/
+}
+
+ul {
+    /*am creating a navigation bar with background color and linking properties inside same page and removing bullets*/
+    list-style-type: none;
+    background-color: rgb(247, 222, 212);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+li {
+    display: inline;
+    /*To display list names in same line*/
+    padding-left: 10px;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+.cright {
+    /* By using these property am moving contact link to right side of the page and giving border to it*/
+    float: right;
+    /*border: 1px solid #FF5733;*/
+    padding: 2px;
+}
+
+a:link {
+    text-decoration: none;
+    /* here am removing underline from the links.*/
+}
+
+#pic {
+    /*this section am seeting the image in the middel of the page and setting border for it.*/
+    margin-left: 350px;
+    border: 2px ridge brown;
+}
+
+h2 {
+    color: white;
+    /*am giving the color for all h2 lines*/
+}
+
+body {
+    font-style: italic;
+    color: rgb(253, 166, 95);
+    font-size: 1.5em;
+    background-image: url('https://images.pexels.com/photos/8161897/pexels-photo-8161897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /*background-color: lightblue;*/
+    /*Am changing the font style and background image for whole page */
+}
+
+#about,
+#exp,
+#skills,
+#contact {
+    padding: 5px;
+    background-color: rgb(247, 160, 175);
+}
+
+.bottom {
+    border: 1px solid black;
+    background-color: rgb(58, 43, 44);
+    margin-left: 350px;
+    margin-right: 450px;
+    padding: 1px;
+}
+
+.hobbies {
+    margin-left: 350px;
+    padding: 10px;
+}
+
+hr {
+    /*by hr tag am drawing a line in footer*/
+    margin-bottom: 0.5em;
+    border: 2px dashed black;
+}
+
+.logo {
+    /* for linkedin logo*/
+    /*display: inline;*/
+    margin-left: 550px;
+    padding: 10px;
+}

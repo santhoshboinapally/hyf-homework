@@ -1,0 +1,214 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .web {
+        background-color: lightgray;
+        height: 40%;
+        padding: 3em 20em;
+    }
+    
+    ul {
+        padding: 0 19em;
+        margin: 1em;
+    }
+    
+    li {
+        text-decoration: none;
+        display: inline;
+        padding-left: 1em;
+    }
+    
+    li a:hover {
+        background-color: white;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    .top,
+    .bottom {
+        display: flex;
+        margin: 0 18em;
+    }
+    
+    .col-left {
+        margin: 2em;
+        width: 150%;
+    }
+    
+    .col-right {
+        margin: 2em;
+        width: 200%;
+    }
+    
+    .col-right .icons {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+    }
+    
+    .col-right .icons img {
+        width: 1.5rem;
+        padding: 0.8rem;
+        margin: 0.4rem;
+        flex: 0 1 calc(24% - 8px);
+    }
+    
+    footer {
+        background: purple;
+        width: 100%;
+        justify-content: space-around;
+        color: rgb(255, 248, 248);
+        padding: 0 18em;
+    }
+    
+    footer .map iframe {
+        width: 200px;
+        height: 200px;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .footer-list {
+        position: relative;
+        display: flex;
+        padding: 0 3rem;
+    }
+    
+    .footer-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-text a {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        color: rgb(255, 251, 251);
+        text-decoration: none;
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .web {
+            padding: 2em 4em;
+        }
+        ul {
+            padding: 0 3em;
+        }
+        .top,
+        .bottom {
+            margin: 0.5em;
+        }
+        .col-right .icons img {
+            width: 3rem;
+            margin: 0.3rem;
+            padding: 0.7rem;
+        }
+        footer {
+            display: block;
+            padding: unset;
+        }
+        footer h4 {
+            padding-bottom: 0.75em;
+            font-size: 1rem;
+        }
+        .map iframe {
+            width: 100px;
+            height: 100px;
+        }
+        .footer-text p,
+        a {
+            font-size: 0.75em;
+        }
+    }
+    
+    @media (min-width: 481px) and (max-width: 768px) {
+        .web {
+            padding: 3em 5em;
+        }
+        ul {
+            padding: 0 4em;
+            margin: 0;
+        }
+        .top,
+        .bottom {
+            display: block;
+            margin: unset;
+        }
+        .col-right,
+        .col-left {
+            width: 100%;
+            padding: 1.5rem;
+            margin: 0;
+        }
+        footer {
+            padding: unset;
+        }
+        .footer-text {
+            padding: 2em;
+        }
+        h4 {
+            font-size: 1.25;
+        }
+        footer p,
+        a {
+            font-size: 1rem;
+        }
+        footer ul {
+            display: block;
+        }
+    }
+    
+    @media (max-width:480px) {
+        .web {
+            padding: 1em 2em;
+        }
+        nav {
+            padding: 0 1em;
+        }
+        nav ul {
+            padding: 0 5em;
+        }
+        nav ul li {
+            padding: 0.75em;
+        }
+        .top,
+        .bottom {
+            display: block;
+            margin: unset;
+        }
+        .col-right .icons img {
+            width: 1em;
+            padding: 1em;
+            margin: 0.5em;
+        }
+        .col-right,
+        .col-left {
+            width: fit-content;
+            margin: 1em;
+        }
+        footer {
+            padding: unset;
+        }
+        .footer-text {
+            padding: 1em;
+        }
+        h4 {
+            font-size: 0.8em;
+        }
+        footer p,
+        a {
+            font-size: 0.75em;
+        }
+        footer ul {
+            display: block;
+        }
+    }

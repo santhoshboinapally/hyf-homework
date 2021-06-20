@@ -1,7 +1,4 @@
 joker
 spiderman
-<<<<<<< HEAD
 ironman
-=======
 titanic
->>>>>>> 53f2c646bcf065020c301ad4fc2a56dbb65a679c

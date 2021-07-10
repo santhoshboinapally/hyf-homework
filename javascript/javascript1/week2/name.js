@@ -11,11 +11,11 @@ const fullname2 = getFullname("Benjamin", "Hughes", false);
 console.log(fullname1);
 console.log(fullname2);
 
-/* if we have to show the name based on gender 
+//if we have to show the name based on gender 
 function getFullname(firstname, surname, useformalname, gender) {
     if (useformalname === true && gender === 'male') {
         console.log("Lord" + "" + firstname + "" + surname);
     } else { console.log('Queen' + "" + firstname + "" + surname); }
 }
 getFullname('Benjamin', 'Hughes', true, 'male');
-getFullname('Julia', 'Hughes');*/
+getFullname('Julia', 'Hughes');

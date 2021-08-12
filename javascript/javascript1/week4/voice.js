@@ -40,17 +40,12 @@ function getReply(command) {
             "Sunday",
         ];
 
-        const today = new Date();
-        const daypattern = { day: "numeric", month: "long", year: "numeric" };
-
-        return today.toLocaleDateString(undefined, daypattern);
-    } else {
-        return "I dont understand what you are saying";
-    }
+        return new Date().toLocaleDateString('en-US', { day: 'numeric', year: 'numeric', month: 'long' })
+   
 }
 //function for simple math.
 function airthOperator(command) {
-    let resultNum = command.match(/\d/g);
+    let resultNum = command.match(/\d+/g);
     let firstNum = parseInt(resultNum[0]);
     let secondNum = parseInt(resultNum[1]);
     if (command.includes("+")) {
@@ -61,10 +56,7 @@ function airthOperator(command) {
     }
 }
 // Funtion to Set timer.
-function Timer() {
-    console.log("Timer is done");
-}
-setTimeout(Timer, 20000);
+setTimeout(function () { console.log("Timer is done"); }, 20000);
 
 console.log(getReply(""));
 console.log(getReply("Hello my name is yeshitha"));

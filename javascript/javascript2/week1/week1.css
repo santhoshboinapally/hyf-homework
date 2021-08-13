@@ -2,6 +2,7 @@ body {
     background-color: rgb(0, 0, 0);
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 .Tasks {
@@ -21,7 +22,15 @@ fieldset {
     background-color: crimson;
 }
 
+.hyfbay {
+    border: 1px dotted coral;
+    display: inline-block;
+}
+
+h3 {
+    color: blueviolet;
+}
+
 p {
-    color: white;
     font-size: 1em;
 }

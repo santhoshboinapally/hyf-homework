@@ -30,7 +30,7 @@ function danishLettersCounter(danString) {
     }
 }
 document.getElementById("danishLetters").innerHTML =
-    "Number of Danish letters in " + danishLetters;
+    "Number of Danish letters in " + danishLettersCounter(danishString2);
 
 console.log(danishLettersCounter(danishString2));
 console.log(danishLettersCounter(danishString));

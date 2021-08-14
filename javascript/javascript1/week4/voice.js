@@ -40,12 +40,12 @@ function getReply(command) {
             "Sunday",
         ];
 
-        return new Date().toLocaleDateString('en-US', { day: 'numeric', year: 'numeric', month: 'long' })
+        return new Date().toLocaleDateString('en-US', { day: 'numeric', year: 'numeric', month: 'long' });
    
 }
 //function for simple math.
 function airthOperator(command) {
-    let resultNum = command.match(/\d+/g);
+    let resultNum = command.split('');
     let firstNum = parseInt(resultNum[0]);
     let secondNum = parseInt(resultNum[1]);
     if (command.includes("+")) {

@@ -9,7 +9,7 @@ const pressL = (event) => {
 };
 
 function countL() {
-    document.addEventListener("keydown", pressL);
+    document.addEventListener("keyup", pressL);
 }
 // counting for S
 
@@ -23,7 +23,7 @@ const pressS = (event) => {
 };
 
 function countS() {
-    document.addEventListener("keydown", pressS);
+    document.addEventListener("keyup", pressS);
 }
 
 //time of the game in seconds
@@ -45,8 +45,8 @@ function startGame() {
         } else {
             alert("Its a Tie. Please Try Again");
         }
-        document.removeEventListener("keydown", pressL);
-        document.removeEventListener("keydown", pressS);
+        document.removeEventListener("keyup", pressL);
+        document.removeEventListener("keyup", pressS);
     }, timeSet * 1000);
 }
 // restart the game..

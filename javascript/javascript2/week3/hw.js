@@ -113,7 +113,10 @@ const arrFunction = [
         console.log("Third Array Function");
     },
 ];
-for (let i = 0; i < arrFunction.length; i++) console.log(arrFunction[i]);
+for (let i = 0; i < arrFunction.length; i++) 
+{
+   arrFunction[i]();
+}
 
 //Create a function as a const and try creating a function normally. Call both functions
 function addition(a, b) {

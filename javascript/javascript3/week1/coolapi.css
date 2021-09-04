@@ -1,0 +1,7 @@
+.root {
+    border: 2px dotted red;
+    background-color: aqua;
+    font-size: 2em;
+    margin: 2em;
+    padding: 2em;
+}

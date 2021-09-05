@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="fastestpresser.css" />
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+  </head>
+
+  <body>
+    <center>
+      <div class="layout-container">
+        <header>
+          <h1>Fastest Finger First</h1>
+        </header>
+
+        <div id="action" class="action">
+          <input type="number" id="time" placeholder="EnterSeconds" /><br />
+          <button id="my-button" class="my-button">Start Game ▶</button><br />
+        </div>
+
+        <div class="counter">
+          <div class="countS">
+            <label>PressS</label>
+            <p id="countS"></p>
+          </div>
+          <div class="vl"></div>
+          <div class="countL">
+            <label>PressL</label>
+            <p id="countL"></p>
+          </div>
+        </div>
+        <button id="reset" class="my-button">Restart 🔁</button><br />
+        <script src="fastestpresser.js"></script>
+        <label id="game" class="game"></label>
+      </div>
+    </center>
+  </body>
+</html>

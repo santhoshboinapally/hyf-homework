@@ -1,0 +1,8 @@
+[{ "name": "santhosh", "dept": "IT", "empno": 101, "tech": "Webdeveloper" },
+    { "name": "rao", "dept": "IT", "empno": 102, "tech": "Cloud" },
+    { "name": "Mikale", "dept": "IT", "empno": 103, "tech": "Frontend" },
+    { "name": "sunil", "dept": "IT", "empno": 104, "tech": "Mainframes" },
+    { "name": "Thomos", "dept": "Accounts", "empno": 105, "tech": "Jura" },
+    { "name": "Frank", "dept": "support", "empno": 106, "tech": "Cisco" },
+    { "name": "Sofia", "dept": "HR", "empno": 107, "tech": "SAP" }
+]

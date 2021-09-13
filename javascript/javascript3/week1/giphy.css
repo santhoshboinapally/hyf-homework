@@ -1,0 +1,30 @@
+body {
+    font-family: "monserrat" sans-serif;
+    background-color: aqua;
+}
+
+h1 {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+    font-family: Lucida Console;
+    font-style: italic;
+    text-shadow: 2px 2px rgba(7, 0, 0, 0.856);
+}
+
+.container {
+    display: flex;
+    margin: 20px 550px 15px;
+    line-height: 25pt;
+    transition: 0.2s ease-out;
+}
+
+input,
+#my-button,
+#reset {
+    padding: 5px 5px 6px;
+}
+
+.area {
+    text-align: center;
+}

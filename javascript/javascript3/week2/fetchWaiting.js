@@ -6,7 +6,7 @@ function waitingTime() {
     console.log("Please wait for 3 seconds.");
     return new Promise(function(resolve) {
         setTimeout(() => {
-            resolve();
+            resolve("timeout after 3 seconds");
         }, 3000);
     });
 }
@@ -14,8 +14,8 @@ function waitingTime() {
 waitingTime().then(() => {
     fetch(url)
         .then((resp) => resp.json())
-        .then((movies) => console.log(movies))
-        .catch((error) => console.log("its Error"));
+        .then((movies) => console.log("movie list from promise and .then",movies))
+        .catch((error) => console.log("Unable to load the data from Api"));
 });
 
 //2. using async/await
@@ -25,9 +25,9 @@ async function getData() {
         await waitingTime();
         const result = await fetch(url);
         const movies = await result.json();
-        console.log(movies);
+        console.log("movie list from async/await ",movies);
     } catch (error) {
-        console.log("its Error!");
+        console.log("Unable to load the data from Api");
     }
 }
 getData();

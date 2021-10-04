@@ -8,7 +8,8 @@ UPDATE task SET due_date = now() WHERE id = 1;
 --•	Change a task status
 UPDATE task SET status_id = 3 WHERE id = 5;
 --•	Mark a task as complete.
-UPDATE task SET status_id = (SELECT id FROM status WHERE name = 'Done')WHERE id = 19;
+UPDATE task SET status_id = (SELECT id FROM status WHERE name = 'Done')WHERE id = 19; 
+(or) UPDATE task SET status_id = 3 WHERE id = 1;
 ---- Delete a task
 DELETE FROM task WHERE id = 37;
 --task 3

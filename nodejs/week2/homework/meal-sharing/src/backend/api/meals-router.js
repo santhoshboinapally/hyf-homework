@@ -44,7 +44,7 @@ router.get('/', (req, res) => {
         });
         res.send(createdAfterMeals);
     } else if (parameters.limit) {
-        mealsLimit = meals.slice(0, parameters.limit);
+        const mealsLimit = meals.slice(0, parameters.limit);
         res.send(mealsLimit);
     } else {
         res.send('<h1>invalid query parameter</h1>');

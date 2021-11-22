@@ -1,0 +1,39 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-image: linear-gradient(black, rgb(148, 83, 123));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 10;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: seashell;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+select {
+    padding: 10px;
+}
+
+.country {
+    background-image: linear-gradient(rgb(247, 118, 124), black);
+    width: 350px;
+    padding: 10px;
+    font-style: italic;
+}

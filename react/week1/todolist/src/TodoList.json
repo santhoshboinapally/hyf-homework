@@ -1,0 +1,17 @@
+  {
+  "TodoList":[{
+      "id":1,
+      "task": "Get out of bed",
+      "deadlineDate": "Wed Sep 13 2021"
+    },
+    { "id":2,
+      "task": "Brush teeth",
+      "deadlineDate": "Thu Sep 14 2021"
+    },
+    { "id":3,
+      "task": "Eat breakfast",
+      "deadlineDate": "Fri Sep 15 2021"
+    }
+]
+}
+  

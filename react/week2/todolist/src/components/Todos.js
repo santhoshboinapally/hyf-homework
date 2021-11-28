@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AddTodo() {
+function Todos() {
   const [todolist, setTodolist] = useState([
     {
       id: 1,
@@ -29,7 +29,7 @@ function AddTodo() {
       }
   ]);
   
-  function addTodos() {
+  function addTodo() {
     setTodolist([
       ...todolist,
       {
@@ -47,14 +47,14 @@ function AddTodo() {
 
   function handleCheck(id) {
     setTodolist((prev) => {
-      const updatedTodos = prev.map((todo) => {
+      const updatedTodo = prev.map((todo) => {
         if (todo.id === id) {
           return { ...todo, completed: !todo.completed };
         } else {
           return todo;
         }
       });
-      return updatedTodos;
+      return updatedTodo;
     });
   }
 
@@ -84,4 +84,4 @@ function AddTodo() {
   );
 }
 
-export default AddTodo;
+export default Todo;

@@ -7,10 +7,10 @@ function RenderTodos() {
     const [deadline, setDeadline] = useState("");
     const [todos, setTodos] = useState([]);
      // fetching the data from api
-    const API_URL =
+    const apiUrl =
   "https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw";
     useEffect(() => {
-      fetch(API_URL)
+      fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
           setTodos(data);
@@ -20,22 +20,21 @@ function RenderTodos() {
     const addTodos = (event) => {
       event.preventDefault();
       if (description !== "") {
-        const newTodos = {
+        const newTodo = {
           id: todos.length + 1,
           description: description,
           deadline: deadline,
         };
         setDescription("");
         setDeadline("");
-        setTodos([...todos, newTodos]);
+        setTodos([...todos, newTodo]);
       }
     };
   
     //delete Todos
     function removeTodo(id) {
-      const nextTodos = todos.filter((todo) => todo.id !== id);
-      console.log(nextTodos);
-      setTodos(nextTodos);
+      const nextTodo = todos.filter((todo) => todo.id !== id);
+      setTodos(nextTodo);
     }
     return (
       <>

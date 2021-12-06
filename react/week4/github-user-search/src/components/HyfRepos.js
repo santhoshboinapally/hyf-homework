@@ -13,7 +13,7 @@ const HyfRepos = () => {
   };
 
   return (
-    <><div class="HYF">
+    <div class="HYF">
       <h1><img src="https://avatars.githubusercontent.com/u/29845045?s=200&v=4"  alt ="HYF"/>  HackYourFuture Repositories</h1>
       <div className="githubrepos">
         <a href="https://github.com/orgs/HackYourFuture-CPH/repositories" onClick={getGitHubRepos}>
@@ -25,8 +25,7 @@ const HyfRepos = () => {
         </ul>
       </div>
     </div>
-    </>
-  );
+    );
 };
 
 export default HyfRepos;

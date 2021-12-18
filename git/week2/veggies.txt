@@ -1,5 +1,7 @@
 Tommato
 Pottato
-Broccali
+corrot
 Spinach
 cucumber
+broccoli
+celery
